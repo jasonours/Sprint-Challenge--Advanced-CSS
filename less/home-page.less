@@ -6,10 +6,25 @@
   margin-right: auto;
   width: 50%;
 
+  @media @phone {
+    width: 100vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    }  //media
+
   img {
     .border-radius(6px);
-  }
-}
+
+    @media @phone {
+      width: 100vw;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    } //media
+
+  } //img
+}//headerimg
 
 .home {
 
@@ -17,56 +32,108 @@
 
     h2 {
       padding: 15px;
-    }
+    } // h2
 
     p {
       padding:0 15px;
-    }
-  
-  }
+    } // p
+  } //intro
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+      width: 100vw;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }// media
+
+    @media @phone {
+
+      .blast {
+        width: 92%;
+        margin: 6px 2px 6px 2px;
+      } //blast
+
+      .sky {
+        display: none;
+      } //sky
+
+      .launch {
+        display: none;
+      } //launch
+    } //media
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }
-  }
+
+      @media @phone {
+        margin: 6px 2px 6px 2px;
+      }
+
+
+    } //img
+  } //spaceimages
 
   .visit-planets {
     padding: 15px;
 
+    @media @phone {
+      width: 100vw;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column-reverse;
+      } //@media
+
     h3 {
       margin-top: 11px;
-    }
+    }// h3
 
     p {
       margin-top: 13px;
-    }
-  }
+    } //p
+  } //.visitplanets
 
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
+    padding: 50px 30px;
     display: flex;
-    justify-content: center;
+    
+    @media @phone {
+      width: 100vw;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column-reverse;
+      padding: 2px;
+    } //@media
 
     .walk-text {
       width: 50%;
 
+      @media @phone {
+        width: 100vw;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        
+      } //@media
+
       h3 {
         margin-bottom: 10px;
-      }
+      } //h3
 
       p {
         margin-bottom: 26px;
-      }
+      } //p
 
       .btn {
         .button;
@@ -74,23 +141,47 @@
         background-color: @ebony-clay;
         .border-radius(8px);
 
+        @media @phone {
+          margin-left: auto;
+          margin-right: auto;
+          width: auto;
+          text-align: center;
+          padding: 20px;
+        } // @media
+
         &:hover {
           color: @ebony-clay;
           background-color: @porcelain;
           .buttonhover;
-        }
-      }
-    }
+        } //&
+      } // .btn
+    } //.walktxt
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
+      @media @phone {
+        width: 92%;
+      }// media
+
+      .spacewalk {
+
+       @media @phone {
+          width: 92%;
+        }// media
+      } // .spacewalk
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
-      }
-    }
+
+      } // img
+    } //walk-img
+  } // .walk
+
+  footer {
+    background-color: @sea-shell;
   }
-}
+} //home
