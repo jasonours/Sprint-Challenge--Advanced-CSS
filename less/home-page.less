@@ -7,9 +7,8 @@
   width: 50%;
 
   img {
-    .border-radius (6px)
+    .border-radius(6px);
   }
-  
 }
 
 .home {
@@ -70,14 +69,16 @@
       }
 
       .btn {
-        width: 33%;
-        padding: 8px;
-        font-size: 2rem;
-        text-align: center;
+        .button;
         color: @porcelain;
         background-color: @ebony-clay;
+        .border-radius(8px);
 
-        .border-radius (8px);
+        &:hover {
+          color: @ebony-clay;
+          background-color: @porcelain;
+          .buttonhover;
+        }
       }
     }
 
